@@ -27,14 +27,14 @@ def what_to_wear(celsius):
 # compute_triangle_perimeter from scratch  
 
 def shoelace_triangle_area(x1, y1, x2, y2, x3, y3):
-    return ((x1*y2 + x2*y3 + x3*y1) - (x1*y3 + x2*y1 + x3*y2) /2)
-
+    area = abs((x1*y2 + x2*y3 + x3*y1) - (x1*y3 + x2*y1 + x3*y2)) /2
+    return area
 def euclidean_distance(x1, y1, x2, y2):
-    eluclidean_distance = (((x1 - x2)**2) + ((y1 - y2)**2) ** (1/2)) 
+    eluclidean_distance = ((((x1 - x2)**2) + ((y1 - y2)**2))**(1/2)) 
     return eluclidean_distance
 # d =√[(x2 – x1)2 + (y2 – y1)2]
 def compute_triangle_perimeter(x1, y1, x2, y2, x3, y3):
-    triangle_primeter = ((((x2 - x1)**2) + ((y2 - y1)**2) ** (1/2)) + (((x1 - x3)**2) + ((y1 - y3)**2) ** (1/2)) + (((x3 - x2)**2) + ((y3 - y2)**2) ** (1/2)))
+    triangle_primeter = ((((x2 - x1)**2) + ((y2 - y1)**2))**(1/2)) + ((((x1 - x3)**2) + ((y1 - y3)**2))**(1/2)) +(((((x3 - x2)**2) + ((y3 - y2)**2))**(1/2)))
     return triangle_primeter
 
 # ---------------------------- Exercise III -------------------------------------
@@ -58,17 +58,17 @@ def polygon_area(number_sides, length_side):
 # your grade. You may freely modify the following codes.
 
 # Exercise 1 test
-fahrenheit = 30
+fahrenheit = 40
 what_to_wear(fahrenheit2celsius(fahrenheit))
 
 # Exercise 2 test
-x1, x2, x3, y1, y2, y3 = 2, 5, 1, 2, 5, 1 # declaration of the vertices of the triangle
+x1, x2, x3, y1, y2, y3 = -4, -5, 3, -4, 5, -3 # declaration of the vertices of the triangle
 area = shoelace_triangle_area(x1, y1, x2, y2, x3, y3)
 perimeter = compute_triangle_perimeter(x1, y1, x2, y2, x3, y3)
 print("The area of the triangle is : " + str(area) + " , its perimeter is : " + str(perimeter) )
 
 # Exercise 3 test
-number_sides = 3
-length_side = 2
+number_sides = 5
+length_side = 4
 print ("The area of the polygon is : " + str(polygon_area(number_sides, length_side)))
 
