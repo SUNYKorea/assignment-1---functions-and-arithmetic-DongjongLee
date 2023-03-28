@@ -58,7 +58,7 @@ def polygon_area(number_sides, length_side):
 # your grade. You may freely modify the following codes.
 
 # Exercise 1 test
-fahrenheit = 40
+fahrenheit = 30
 what_to_wear(fahrenheit2celsius(fahrenheit))
 
 # Exercise 2 test
