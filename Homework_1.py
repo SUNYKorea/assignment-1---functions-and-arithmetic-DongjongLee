@@ -2,7 +2,9 @@
 # SBUID: 112502003
 
 # Remove the ellipses (...) when writing your solutions.
-
+##################### SCORE ######################
+####### Score:  8.5/10
+#################################################
 # ---------------------------- Exercise I ---------------------------------------
 # ----------------- Convert Fahrenheit to Celsius -------------------------------
 # TODO: Complete the implementation of fahrenheit2celsius () and what_to_wear(). 
@@ -34,7 +36,7 @@ def euclidean_distance(x1, y1, x2, y2):
     return eluclidean_distance
 # d =√[(x2 – x1)2 + (y2 – y1)2]
 def compute_triangle_perimeter(x1, y1, x2, y2, x3, y3):
-    triangle_primeter = ((((x2 - x1)**2) + ((y2 - y1)**2))**(1/2)) + ((((x1 - x3)**2) + ((y1 - y3)**2))**(1/2)) +(((((x3 - x2)**2) + ((y3 - y2)**2))**(1/2)))
+    triangle_primeter = ((((x2 - x1)**2) + ((y2 - y1)**2))**(1/2)) + ((((x1 - x3)**2) + ((y1 - y3)**2))**(1/2)) +(((((x3 - x2)**2) + ((y3 - y2)**2))**(1/2))) # please use predefined functons and variables 
     return triangle_primeter
 
 # ---------------------------- Exercise III -------------------------------------
@@ -46,7 +48,7 @@ def deg2rad(deg):
     return (deg * math.pi/180)
 
 def apothem(number_sides, length_side):
-   a = (length_side / (2 * math.tan(180/number_sides)))
+   a = (length_side / (2 * math.tan(180/number_sides))) # logic is wrong and hence the area of polygon is wrong --> -2
    return a
 
 def polygon_area(number_sides, length_side):
